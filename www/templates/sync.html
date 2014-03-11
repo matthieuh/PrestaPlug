@@ -1,0 +1,11 @@
+<ion-view title="'Sync'">
+  <ion-content has-header="true" has-tabs="true">	
+	<div ng-init="sync(syncFinished)">
+	sync
+	    <div class="progress progress--primary">
+		    <div class="progress__bar" style="width: {{syncProgress}}%"></div>
+		</div>
+		<p>{{step}}</p>
+	</div>
+</ion-content>
+</ion-view>

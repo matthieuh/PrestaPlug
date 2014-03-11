@@ -12,9 +12,6 @@ angular.module('prestaplug.services', [])
     });
   }
   return {
-    categories: function() { return doRequest('categories',''); },
-    category: function(id) { return doRequest('categories',id); },
-    image: function(type,id) { return doRequest('images/'+type,id); },
     all: function(type) { return doRequest(type,''); },
     details: function(type,id) { return doRequest(type,id); }
   }
@@ -29,4 +26,9 @@ angular.module('prestaplug.services', [])
   return {
     toJson: function(data) { return toJson(data);}
   }
+})
+
+
+.factory('_', function() {
+  return window._; // assumes underscore has already been loaded on the page
 });

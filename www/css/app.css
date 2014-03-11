@@ -6,3 +6,62 @@
   width: 96px;
   height: 96px;
 }
+
+/** progress **/
+
+.progress {
+  background-color: #efefef;
+  height: 4px;
+}
+.progress .progress__bar {
+  display: block;
+  color: white;
+  background-color: #007aff;
+  height: 100%;
+  -webkit-transition: width 0.6s ease;
+  -moz-transition: width 0.6s ease;
+  transition: width 0.6s ease;
+}
+.progress--primary .progress__bar {
+  background-color: #007aff;
+}
+.progress--success .progress__bar {
+  background-color: #4cd964;
+}
+.progress--important .progress__bar {
+  background-color: #ff3b30;
+}
+
+
+/** Intro **/
+
+.slider {
+  height: 100%;
+}
+.slider-slide {
+  padding-top: 80px;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+}
+
+#logo {
+  margin: 30px 0px;
+}
+
+#list {
+  width: 170px;
+  margin: 30px auto;
+  font-size: 20px;
+}
+#list ol {
+  margin-top: 30px;
+}
+#list ol li {
+  text-align: left;
+  list-style: decimal;
+  margin: 10px 0px;
+}
